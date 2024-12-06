@@ -1,14 +1,51 @@
 public class Human {
+    //identification
+    private static int nextId = 1;
+    private int id;
+
+    //basic information
     private String name;
     private int age;
-    private int SSN;
+    private String location;
+
+    //physical attributes
+    private String hairColor;
+    private String hairType;
+    private String eyeColor;
+
+    //other attributes
+    private String occupation;
+    private String language;
+    private String hobby;
+    private String mood;
+    private int HP;
+
+
+    //default constructor
+    public Human() {
+        this.name = "";
+        this.age = 0;
+        this.id = nextId;
+        nextId++;
+    }
+    //constructor with parameters
+    public Human(String name, int age) {
+        this.name = name;
+        this.age = age;
+        this.id = nextId;
+        nextId++;
+    }
 
     public void happyBirthday() {
         this.age += 1;
-        System.out.println("Happy Birthday! You are now " + this.age);
+        System.out.println("Happy Birthday, "+ this.name + "! You are now " + this.age + " years old.");
     }
 
-    //math
+    public String toString() {
+        return "Name: " + name + "\nAge: " + age + "\nId: " + id + "\n";
+    }
+
+    //simple math methods
     public int add(int a, int b) {
         return a + b;
     }
@@ -24,14 +61,11 @@ public class Human {
 
 
     //setters
-    public void setName(String n) {
-        this.name = n;
+    public void setName(String name) {
+        this.name = name;
     }
-    public void setAge(int a) {
-        this.age = a;
-    }
-    public void setSSN(int social) {
-        this.SSN = social;
+    public void setAge(int age) {
+        this.age = age;
     }
 
     //getters
@@ -41,7 +75,7 @@ public class Human {
     public int getAge() {
         return age;
     }
-    public int getSSN() {
-        return SSN;
+    public int getId() {
+        return id;
     }
 }
