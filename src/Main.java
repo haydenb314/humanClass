@@ -10,5 +10,6 @@ public class Main {
         System.out.println(Jeb);
         Jeb.happyBirthday();
         Google.happyBirthday();
+        System.out.println(Google.simplfyRadical("root 80"));
     }
 }

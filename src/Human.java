@@ -59,6 +59,12 @@ public class Human {
         return (double) a / b;
     }
 
+    //undoing radical
+    public int simplfyRadical(String r) {
+        int radicand = Integer.parseInt(r.substring(r.indexOf(" ") + 1, r.length()));
+        return radicand;
+    }
+
 
     //setters
     public void setName(String name) {
