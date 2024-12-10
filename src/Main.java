@@ -1,6 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        Human Google = new Human("Google", 500);
+        Human Google = new Human();
+        Google.setName("Google");
         System.out.println(Google);
         Human Bob = new Human();
         Bob.setName("Bob");
@@ -10,7 +11,7 @@ public class Main {
         System.out.println(Jeb);
         Jeb.happyBirthday();
         Google.happyBirthday();
-        System.out.println(Google.simplfyRadical("root 80"));
+        Google.simplfyRadical("root 80");
         Google.greeting(Jeb);
         Google.quadraticFormula(1, 3, 2);
         Google.summation(1, 20);
