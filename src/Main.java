@@ -11,5 +11,11 @@ public class Main {
         Jeb.happyBirthday();
         Google.happyBirthday();
         System.out.println(Google.simplfyRadical("root 80"));
+        Google.greeting(Jeb);
+        Google.quadraticFormula(1, 3, 2);
+        Google.summation(1, 20);
+        Google.areaOfCircle(2);
+        Google.pythagoreanTheorem(3, 4);
+        Google.trueStatement("5 > 4");
     }
 }
